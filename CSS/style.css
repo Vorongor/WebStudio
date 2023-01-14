@@ -1,0 +1,26 @@
+.the-page {
+  position: relative;
+  width: 1440px;
+  height: 2590px;
+  background: #ffffff;
+}
+.top-line-box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+/* .hero-image { 
+  position: absolute;
+  width: 1440px;
+  height: 600px;
+  left: 0px;
+  top: 72px;
+  background: #2e2f42;
+}*/
