@@ -1,26 +1,130 @@
-.the-page {
+body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 1440px;
   height: 2590px;
   background: #ffffff;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.top-line-box {
+
+/* head-page */
+.head-page {
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: absolute;
+  flex-direction: row;
   width: 1440px;
   height: 72px;
+  padding: 0 auto;
   left: 0px;
   top: 0px;
-  background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
 }
-/* .hero-image { 
-  position: absolute;
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.webstudio-header {
+  margin: 24px 0px 24px 156px;
+}
+
+.web {
+  color: #4d5ae5;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+.studio {
+  color: #2e2f42;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-list {
+  margin: 24px 0px 24px 76px;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.menu-list-item {
+  margin: 0px 40px 0px 0px;
+}
+.menu-list-point {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+/* address */
+.address-box {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0px 24px 333px;
+  color: #ffffff;
+}
+.address-box-item {
+  margin: 0px 40px 0px 0px;
+  color: #ffffff;
+}
+.address-box-point {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* section1 */
+.section1 {
   width: 1440px;
   height: 600px;
   left: 0px;
   top: 72px;
   background: #2e2f42;
-}*/
+}
+.hero-image-title {
+  padding-top: 188px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.hero-image-button {
+  margin: 48px 0px 0px 636px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
