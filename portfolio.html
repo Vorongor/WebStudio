@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style_portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -12,15 +19,18 @@
       <!-- topline -->
       <nav class="menu">
         <!-- logo -->
-        <a class="webstudio-header"
-        href="./index.html"><span class="web">Web</span><span class="studio">Studio</span></a>
+        <a class="webstudio-header" href="./index.html"
+          ><span class="web">Web</span><span class="studio">Studio</span></a
+        >
         <ul class="menu-list">
           <!-- menu -->
           <li class="menu-list-item">
             <a href=""><span class="menu-list-point">Studio</span></a>
           </li>
           <li class="menu-list-item">
-            <a href="./portfolio.html"><span class="menu-list-point">Portfolio</span></a>
+            <a href="./portfolio.html"
+              ><span class="menu-list-point">Portfolio</span></a
+            >
           </li>
           <li class="menu-list-item">
             <a href=""><span class="menu-list-point">Contacts</span></a>
@@ -31,30 +41,43 @@
       <address>
         <ul class="address-box">
           <li class="address-box-item">
-            <a href="mailto:info@devstudio.com"><span class="address-box-point">info@devstudio.com</span></a>
+            <a href="mailto:info@devstudio.com"
+              ><span class="address-box-point">info@devstudio.com</span></a
+            >
           </li>
           <li class="address-box-item">
-            <a href="tel:+110001111111"><span class="address-box-point">+11 (000) 111-11-11</span></a>
+            <a href="tel:+110001111111"
+              ><span class="address-box-point">+11 (000) 111-11-11</span></a
+            >
           </li>
         </ul>
       </address>
     </header>
     <main>
       <section class="portfolio-box1">
-        <h1></h1>
-      <!-- filters -->
-        <h2></h2>
-        <button type="button">All</button>
-        <button type="button">Web Site</button>
-        <button type="button">App</button>
-        <button type="button">Design</button>
-        <button type="button">Marketing</button>
+        <!-- filters -->
+        <h2 class="portfolio-box1-title"></h2>
+        <button type="button" class="all">
+          <span class="button-text-all">All</span>
+        </button>
+        <button type="button" class="website">
+          <span class="button-text">Web Site</span>
+        </button>
+        <button type="button" class="app">
+          <span class="button-text">App</span>
+        </button>
+        <button type="button" class="design">
+          <span class="button-text">Design</span>
+        </button>
+        <button type="button" class="marketing">
+          <span class="button-text">Marketing</span>
+        </button>
       </section>
       <!-- finger -->
       <!-- row1 -->
       <section class="row1">
         <h2></h2>
-        <ul>
+        <ul class="row1-list">
           <li>
             <img
               src="./images/portfolio1.jpg"
@@ -90,7 +113,7 @@
       <!-- row2 -->
       <section class="row2">
         <h2></h2>
-        <ul>
+        <ul class="row2-list">
           <li>
             <img
               src="./images/portfolio4.jpg"
@@ -126,7 +149,7 @@
       <!-- row3 -->
       <section class="row3">
         <h2></h2>
-        <ul>
+        <ul class="row3-list">
           <li>
             <img
               src="./images/portfolio7.jpg"

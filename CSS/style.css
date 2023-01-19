@@ -17,13 +17,14 @@ body {
   padding: 0 auto;
   left: 0px;
   top: 0px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .menu {
   display: flex;
   flex-direction: row;
 }
 .webstudio-header {
-  padding: 40px 0px 0px 156px;
+  padding: 24px 0px 0px 156px;
 }
 
 .web {
@@ -44,7 +45,7 @@ body {
 }
 
 .menu-list {
-  padding: 24px 0px 24px 76px;
+  margin: 24px 0px 0px 76px;
   display: flex;
   flex-direction: row;
   color: #ffffff;
@@ -65,7 +66,7 @@ body {
 .address-box {
   display: flex;
   flex-direction: row;
-  padding: 24px 0px 24px 333px;
+  margin: 24px 0px 24px 333px;
   color: #ffffff;
 }
 .address-box-item {
@@ -83,7 +84,7 @@ body {
 }
 
 /* section1 */
-.section1 {
+.section1 {margin-top: 0px;
   width: 1440px;
   height: 600px;
   background: #2e2f42;
@@ -104,6 +105,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   padding: 16px 32px;
   gap: 10px;
   width: 169px;
@@ -262,7 +264,8 @@ body {
   order: 1;
   flex-grow: 0;
 }
-.footer {padding-top: 30px;
+.footer {
+  padding-top: 30px;
   width: 1440px;
   height: 170px;
   background: #2e2f42;
@@ -287,7 +290,8 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-.footer-text {padding-left: 156px;
+.footer-text {
+  padding-left: 156px;
   padding-top: 15px;
   font-family: "Roboto";
   font-style: normal;
