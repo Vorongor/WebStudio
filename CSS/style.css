@@ -30,6 +30,15 @@ img {
   --main-font: "Roboto";
   --logo-font: "Raleway";
 }
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .section-main-title {
   margin: 0;
   font-family: var(--main-font);
@@ -69,10 +78,12 @@ body {
   display: flex;
   border-bottom: 1px solid #e7e9fc;
   align-content: center;
-  justify-content: space-between;
-  padding-left: 156px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.haed-container {
+  display: flex;
+  justify-content: space-between;
 }
 .menu {
   display: flex;
@@ -98,8 +109,6 @@ body {
   display: flex;
   flex-direction: row;
   color: #ffffff;
-}
-.menu-list-item {
 }
 .menu-list-point {
   font-weight: 500;
@@ -168,8 +177,7 @@ body {
   border-radius: 4px;
 }
 /* ==========================Section2======================== */
-.section2 {
-}
+
 .section2-main-title {
   visibility: hidden;
   margin: 0;
@@ -183,8 +191,7 @@ body {
   gap: 24px;
   color: #ffffff;
 }
-.section2-list-item {
-}
+
 /* ==========================section3============================== */
 .section3 {
   display: flex;
@@ -201,12 +208,11 @@ body {
   color: #ffffff;
   gap: 24px;
 }
-.section3-list-item {
-}
+
 /* ==============================section4=========================== */
 .section4 {
+  padding-bottom: 120px;
   text-align: center;
-  height: 732px;
   background: #f4f4fd;
 }
 .section4-main-title {
@@ -238,7 +244,7 @@ body {
 .footer {
   padding-top: 100px;
   padding-left: 156px;
-  height: 310px;
+  padding-bottom: 100px;
   background: #2e2f42;
 }
 .studio-footer {
@@ -267,13 +273,13 @@ body {
   margin: 0;
 }
 .button-list {
-  margin-top: 96px;
+  padding-top: 96px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  gap: 24px;
 }
 .button-list-item {
-  padding-right: 24px;
+  /* padding-right: 24px; */
   color: #f4f4fd;
 }
 .menu-button {
@@ -299,55 +305,47 @@ body {
   cursor: pointer;
 }
 .all {
-  width: 69px;
-  height: 48px;
+  min-width: 69px;
+  min-height: 48px;
 }
 .website {
-  width: 116px;
-  height: 48px;
+  min-width: 116px;
+  min-height: 48px;
 }
 .app {
-  width: 78px;
-  height: 48px;
+  min-width: 78px;
+  min-height: 48px;
 }
 .design {
-  width: 101px;
-  height: 48px;
+  min-width: 101px;
+  min-height: 48px;
 }
 .marketing {
-  width: 126px;
-  height: 48px;
+  min-width: 126px;
+  min-height: 48px;
 }
 
 /* =======================galery======================== */
-.row-list {
+.row-list { 
+  padding-top: 72px;
+  padding-bottom: 120px;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
-.row1-list,
-.row2-list,
-.row3-list {
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  margin-top: 72px;
-  margin-left: 60px;
-}
-.row1-list-item,
-.row2-list-item,
-.row3-list-item {
-  margin-left: 24px;
+
+.row-list-item{
   box-sizing: border-box;
-  width: 360px;
-  height: 420px;
+  width: calc((100-48px)/3);
+  height: calc((100-96)/3);
   background: #ffffff;
-  border: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.row1-list-title,
-.row2-list-title,
-.row3-list-title {
+.row-list-title{
+  margin-top: 32px;
   padding-left: 16px;
   font-family: var(--main-font);
   font-weight: 600;
@@ -359,9 +357,9 @@ body {
   order: 0;
   flex-grow: 0;
 }
-.row1-list-text,
-.row2-list-text,
-.row3-list-text {
+.row-list-text{
+  margin-top: 8px;
+  margin-bottom: 32px;
   color: #434455;
   padding-left: 16px;
   font-family: var(--main-font);
@@ -369,6 +367,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
 }
 .galery-bot {
   margin-bottom: 120px;
