@@ -138,7 +138,7 @@ body {
 
 /* =============================Hero Image ============================== */
 /* section1 */
-.section1 {
+.section-hero {
   padding-top: 188px;
   padding-bottom: 188px;
   background: #2e2f42;
@@ -177,23 +177,25 @@ body {
 }
 /* ==========================Section2======================== */
 
-.section2-main-title {
+.section-info {
+  padding-top: 72px;
+}
+.section-info-main-title {
   visibility: hidden;
   margin: 0;
 }
-.section2-list {
+.section-info-list {
   box-sizing: border-box;
-  padding-top: 120px;
   display: flex;
   justify-content: space-between;
   color: #ffffff;
 }
-.section2-list-item {
+.section-info-list-item {
   width: 264px;
 }
 
 /* ==========================section3============================== */
-.section3 {
+.section-doing {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -201,7 +203,7 @@ body {
   padding-bottom: 120px;
 }
 
-.section3-list {
+.section-doing-list {
   margin-top: 72px;
   display: flex;
   justify-content: center;
@@ -210,21 +212,21 @@ body {
 }
 
 /* ==============================section4=========================== */
-.section4 {
+.section-team {
   padding-bottom: 120px;
   padding-top: 120px;
   text-align: center;
   background: #f4f4fd;
 }
 
-.section4-list {
+.section-team-list {
   margin-top: 72px;
   display: flex;
   justify-content: center;
   gap: 24px;
   color: #f4f4fd;
 }
-.section4-list-item {
+.section-team-list-item {
   /* margin-right: 24px; */
   display: flex;
   flex-direction: column;
@@ -236,9 +238,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.section4-text-box {
-  margin-top: 32px;
-  margin-bottom: 32px;
+.section-team-text-box {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* ===================footer=========================== */
@@ -327,7 +329,7 @@ body {
 
 /* =======================galery======================== */
 .row-list {
- margin-top: 72px;
+  margin-top: 72px;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -344,10 +346,10 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .portfolio-text-box {
-  padding-left: 8px;
+  padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 8px;
+  padding-right: 16px;
 }
 .row-list-title {
   /* padding-left: 16px; */
