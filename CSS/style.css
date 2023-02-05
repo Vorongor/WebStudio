@@ -185,9 +185,11 @@ body {
   box-sizing: border-box;
   padding-top: 120px;
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
   color: #ffffff;
+}
+.section2-list-item {
+  width: 264px;
 }
 
 /* ==========================section3============================== */
@@ -325,7 +327,7 @@ body {
 
 /* =======================galery======================== */
 .row-list {
-  padding-top: 72px;
+ margin-top: 72px;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -342,11 +344,13 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .portfolio-text-box {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-left: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 8px;
 }
 .row-list-title {
-  padding-left: 16px;
+  /* padding-left: 16px; */
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 20px;
@@ -360,7 +364,7 @@ body {
 .row-list-text {
   margin-top: 8px;
   color: #434455;
-  padding-left: 16px;
+  /* padding-left: 16px; */
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
