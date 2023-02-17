@@ -143,6 +143,13 @@ body {
   padding-bottom: 188px;
   background: #2e2f42;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-image-title {
   margin: 0;
@@ -189,6 +196,14 @@ body {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+}
+
+.icon-box {
+  width: 264px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  background-color: #F4F4FD;
 }
 .section-info-list-item {
   width: 264px;
@@ -243,11 +258,46 @@ body {
   padding-bottom: 32px;
 }
 
+/* ===================costomers=================== */
+.section-costomers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.section-costomers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.costomers-list {
+  padding-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+.costomers-list-item {
+  width: 156px;
+  height: 88px;
+  justify-content: center;
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+/* .costomer-logo {
+  margin: 16px 32px;
+} */
+
 /* ===================footer=========================== */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background: #2e2f42;
+}
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
 .studio-footer {
   color: #ffffff;
