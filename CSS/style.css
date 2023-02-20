@@ -203,7 +203,7 @@ body {
   height: 112px;
   display: grid;
   place-items: center;
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 .section-info-list-item {
   width: 264px;
@@ -242,11 +242,11 @@ body {
   color: #f4f4fd;
 }
 .section-team-list-item {
-  /* margin-right: 24px; */
   display: flex;
   flex-direction: column;
-  width: 264px;
-  height: 380px;
+  justify-content: center;
+  min-width: 264px;
+  min-height: 380px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -256,6 +256,29 @@ body {
 .section-team-text-box {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.team-media-box {
+  margin: 8px 16px 32px 16px;
+  width: 232px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.team-media-item {
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.team-media-item:hover,
+.team-media-item:focus {
+  color: #000000;
+  background-color: #4d5ae5;
 }
 
 /* ===================costomers=================== */
@@ -314,6 +337,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+}
+.footer-media-list {
+  margin-top: 16px;
+  width: 208px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foter-media-item {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* =========================portfolio========================== */
 .portfolio-box {
@@ -393,8 +431,12 @@ body {
   height: calc((100-96) / 3);
   background: #ffffff;
   border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.row-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-text-box {
   padding-left: 16px;
   padding-top: 32px;
