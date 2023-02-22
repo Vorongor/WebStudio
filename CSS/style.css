@@ -30,6 +30,9 @@ img {
   --main-font: "Roboto";
   --logo-font: "Raleway";
 }
+.icon {
+  fill: #F4F4FD;
+}
 
 .container {
   box-sizing: border-box;
@@ -118,6 +121,21 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.menu-list-item::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  border-color: #404bbf;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.menu-list-point:hover,
+.menu-list-point:focus {
+  color: #404bbf;
+}
+
 /* address */
 
 .address-box-list {
@@ -134,6 +152,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.address-box-point:hover,
+.address-box-point:focus {
+  color: #404bbf;
 }
 
 /* =============================Hero Image ============================== */
@@ -177,8 +199,8 @@ body {
 .hero-image-button:hover,
 .hero-image-button:focus {
   cursor: pointer;
-  color: #4d5ae5;
-  background: #ffffff;
+  color: #ffffff;
+  background: #404bbf;
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
   border-radius: 4px;
 }
@@ -199,6 +221,7 @@ body {
 }
 
 .icon-box {
+  margin-bottom: 8px;
   width: 264px;
   height: 112px;
   display: grid;
@@ -278,7 +301,7 @@ body {
 .team-media-item:hover,
 .team-media-item:focus {
   color: #000000;
-  background-color: #4d5ae5;
+  background-color: #404bbf;
 }
 
 /* ===================costomers=================== */
@@ -300,18 +323,28 @@ body {
   display: flex;
   gap: 24px;
 }
-.costomers-list-item {
+.costomers-list-item-link {
+  display: block;
   width: 156px;
   height: 88px;
-  justify-content: center;
   padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-/* .costomer-logo {
-  margin: 16px 32px;
-} */
+.costomers-list-item:hover .costomers-list-item-link,
+.costomers-list-item:focus .costomers-list-item-link {
+  border-color: #4d5ae5;
+  fill: #404bbf;
+}
+.costomer-logo {
+  fill: #AFB1B8;
+}
+.costomer-logo:hover,
+.costomer-logo:focus {
+  fill: #4d5ae5;
+}
 
+/* fill="#4d5ae5" style="fill: var(--color2, #4d5ae5)"  */
 /* ===================footer=========================== */
 .footer {
   padding-top: 100px;
@@ -352,6 +385,10 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.foter-media-item:hover,
+.foter-media-item:focus {
+  background-color: #31d0aa;
 }
 /* =========================portfolio========================== */
 .portfolio-box {
