@@ -438,6 +438,7 @@ body {
 }
 .menu-button:hover,
 .menu-button:focus {
+  outline: none;
   color: #ffffff;
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
