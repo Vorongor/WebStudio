@@ -31,7 +31,7 @@ img {
   --logo-font: "Raleway";
 }
 .icon {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .container {
@@ -121,7 +121,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.menu-list-item::after {
+.menu-list-point::after {
   display: block;
   margin: 0 auto;
   content: "";
@@ -135,10 +135,12 @@ body {
 
 .menu-list-point:hover,
 .menu-list-point:focus {
+  outline: none;
   color: #404bbf;
 }
-.menu-list-item:hover::after,
-.menu-list-item:focus::after {
+.menu-list-point:hover::after,
+.menu-list-point:focus::after {
+  outline: none;
   width: 100%;
   opacity: 1;
 }
@@ -162,6 +164,7 @@ body {
 }
 .address-box-point:hover,
 .address-box-point:focus {
+  outline: none;
   color: #404bbf;
 }
 
@@ -298,12 +301,14 @@ body {
   align-content: center;
 }
 .team-media-item {
+  display: block;
   padding: 12px;
   width: 40px;
   height: 40px;
   color: #f4f4fd;
   background-color: #4d5ae5;
   border-radius: 50%;
+  outline: none;
 }
 .team-media-item:hover,
 .team-media-item:focus {
@@ -338,20 +343,20 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.costomers-list-item:hover .costomers-list-item-link,
-.costomers-list-item:focus .costomers-list-item-link {
+.costomers-list-item-link:hover,
+.costomers-list-item-link:focus {
+  outline: none;
   border-color: #4d5ae5;
   fill: #404bbf;
 }
 .costomer-logo {
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
-.costomers-list-item:hover .costomer-logo,
-.costomers-list-item:focus .costomer-logo {
+.costomers-list-item-link:hover .costomer-logo,
+.costomers-list-item-link:focus .costomer-logo {
+  outline: none;
   fill: #4d5ae5;
 }
-
-/* fill="#4d5ae5" style="fill: var(--color2, #4d5ae5)"  */
 /* ===================footer=========================== */
 .footer {
   padding-top: 100px;
@@ -387,6 +392,7 @@ body {
   justify-content: space-between;
 }
 .foter-media-item {
+  display: block;
   padding: 8px;
   width: 40px;
   height: 40px;
@@ -395,6 +401,7 @@ body {
 }
 .foter-media-item:hover,
 .foter-media-item:focus {
+  outline: none;
   background-color: #31d0aa;
 }
 /* =========================portfolio========================== */
