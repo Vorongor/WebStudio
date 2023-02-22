@@ -125,15 +125,22 @@ body {
   display: block;
   margin: 0 auto;
   content: "";
-  border-color: #404bbf;
-  width: 48px;
+  background-color: #404bbf;
+  width: 0px;
   height: 4px;
   border-radius: 2px;
+  opacity: 0;
+  transition: all 300ms ease-in;
 }
 
 .menu-list-point:hover,
 .menu-list-point:focus {
   color: #404bbf;
+}
+.menu-list-item:hover::after,
+.menu-list-item:focus::after {
+  width: 100%;
+  opacity: 1;
 }
 
 /* address */
@@ -339,8 +346,8 @@ body {
 .costomer-logo {
   fill: #AFB1B8;
 }
-.costomer-logo:hover,
-.costomer-logo:focus {
+.costomers-list-item:hover .costomer-logo,
+.costomers-list-item:focus .costomer-logo {
   fill: #4d5ae5;
 }
 
