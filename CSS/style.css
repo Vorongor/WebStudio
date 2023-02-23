@@ -108,6 +108,7 @@ body {
 }
 
 .menu-list {
+  position: relative;
   gap: 40px;
   display: flex;
   flex-direction: row;
@@ -145,8 +146,38 @@ body {
   width: 100%;
   opacity: 1;
 }
-
-
+.studio-point .menu-list-point {
+  color: #404bbf;
+}
+.studio-point::after {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-color: #404bbf;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 1;
+  }
+  .portfolio-point .menu-list-point {
+    color: #404bbf;
+  }
+  .portfolio-point::after {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 34%;
+    display: block;
+    content: "";
+    background-color: #404bbf;
+    width: 66px;
+    height: 4px;
+    border-radius: 2px;
+    opacity: 1;
+    }
 .menu-list-point.current .menu-list-point::after {
   outline: none;
   width: 100%;
