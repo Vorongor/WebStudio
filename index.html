@@ -30,7 +30,7 @@
           <ul class="menu-list">
             <!-- menu -->
             <li class="">
-              <a href="./index.html" class="links menu-list-point"
+              <a href="./index.html" class="links menu-list-point current"
                 ><span class="">Studio</span></a
               >
             </li>
@@ -73,7 +73,7 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="hero-image-button">
+          <button type="button" class="hero-image-button" data-modal-open>
             <span class="button-text-hero">Order Service</span>
           </button>
         </div>
@@ -458,14 +458,15 @@
       </section>
     </footer>
     <!-- modal window -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modalwindow">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
