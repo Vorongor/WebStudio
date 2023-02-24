@@ -161,23 +161,23 @@ body {
   height: 4px;
   border-radius: 2px;
   opacity: 1;
-  }
-  .portfolio-point .menu-list-point {
-    color: #404bbf;
-  }
-  .portfolio-point::after {
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    left: 34%;
-    display: block;
-    content: "";
-    background-color: #404bbf;
-    width: 66px;
-    height: 4px;
-    border-radius: 2px;
-    opacity: 1;
-    }
+}
+.portfolio-point .menu-list-point {
+  color: #404bbf;
+}
+.portfolio-point::after {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 34%;
+  display: block;
+  content: "";
+  background-color: #404bbf;
+  width: 66px;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 1;
+}
 .menu-list-point.current .menu-list-point::after {
   outline: none;
   width: 100%;
@@ -246,7 +246,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    backgroung 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-image-button:hover,
@@ -377,15 +377,22 @@ body {
   display: flex;
   gap: 24px;
 }
+.costomers-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 .costomers-list-item-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   width: 156px;
   height: 88px;
-  padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .costomers-list-item-link:hover,
 .costomers-list-item-link:focus {
@@ -395,6 +402,7 @@ body {
 }
 .costomer-logo {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .costomers-list-item-link:hover .costomer-logo,
 .costomers-list-item-link:focus .costomer-logo {
@@ -530,6 +538,9 @@ body {
   height: calc((100-96) / 3);
   background: #ffffff;
   border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0),
+    0px 1px 1px rgba(46, 47, 66, 0), 0px 2px 1px rgba(46, 47, 66, 0);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-box {
   position: relative;
