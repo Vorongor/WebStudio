@@ -490,30 +490,48 @@
         </p>
         <form action="#" class="modal-form">
           <lable class="modal-lable"
-            >Name<input type="text" class="modal-form-input" name="user_name" required/>
-            <svg class="name-icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-person"></use>
-            </svg>
+            >Name
+            <span class="modal-iput-box">
+              <input
+                type="text"
+                class="modal-form-input"
+                name="user_name"
+                pattern="^[a-zA-Z]+$"
+                minlength="2"
+                required
+              />
+              <svg class="name-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </span>
           </lable>
           <lable class="modal-lable"
-            >Phone<input
-              type="tel"
-              class="modal-form-input"
-              name="user_phone"
-              required
-            /><svg class="name-icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-recall"></use>
-            </svg>
+            >Phone
+            <span class="modal-iput-box">
+              <input
+                type="tel"
+                class="modal-form-input"
+                name="user_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="XXX-XXX-XX-XX"
+                required
+              /><svg class="name-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-recall"></use>
+              </svg>
+            </span>
           </lable>
           <lable class="modal-lable"
-            >Email<input
-              type="email"
-              class="modal-form-input"
-              name="user_email"
-              required
-            /><svg class="name-icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-mailsand"></use>
-            </svg>
+            >Email
+            <span class="modal-iput-box">
+              <input
+                type="email"
+                class="modal-form-input"
+                name="user_email"
+                required
+              /><svg class="name-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-mailsand"></use>
+              </svg>
+            </span>
           </lable>
           <lable class="modal-lable"
             >Comment<textarea
@@ -523,13 +541,15 @@
               placeholder="Text input"
             ></textarea>
           </lable>
-          <label class="modal-lable checkbox">
-            <input
-              type="checkbox"
-              name="privacy_policy"
-              value="privacy_policy"
-            />
-            <p>
+          <input
+            type="checkbox"
+            id="privacy_policy"
+            class="modal-form-checkbox"
+            name="privacy_policy"
+            required
+          />
+          <label for="privacy_policy" class="modal-lable checkbox"
+            ><p>
               I accept the terms and conditions of the
               <a href="">Privacy Policy</a>
             </p>
