@@ -485,12 +485,12 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modalwindow-title">
+        <p class="modalwindow-title">
           Leave your contacts and we will call you back
-        </h2>
+        </p>
         <form action="#" class="modal-form">
           <lable class="modal-lable"
-            >Name<input type="text" class="modal-form-input" name="user_name" />
+            >Name<input type="text" class="modal-form-input" name="user_name" required/>
             <svg class="name-icon" width="12" height="12">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
@@ -500,6 +500,7 @@
               type="tel"
               class="modal-form-input"
               name="user_phone"
+              required
             /><svg class="name-icon" width="12" height="12">
               <use href="./images/sprite.svg#icon-recall"></use>
             </svg>
@@ -509,6 +510,7 @@
               type="email"
               class="modal-form-input"
               name="user_email"
+              required
             /><svg class="name-icon" width="12" height="12">
               <use href="./images/sprite.svg#icon-mailsand"></use>
             </svg>

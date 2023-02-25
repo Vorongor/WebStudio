@@ -503,9 +503,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-icon {
   fill: #ffffff;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  cursor: pointer;
+  color: #ffffff;
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
 }
 /* =========================portfolio========================== */
 .portfolio-box {
@@ -727,6 +737,7 @@ body {
   flex-direction: column;
 }
 .modal-lable {
+  outline: none;
   position: relative;
   margin-bottom: 8px;
   font-family: var(--main-font);
@@ -749,6 +760,7 @@ body {
 }
 .modal-lable:hover .modal-form-input,
 .modal-lable:focus .modal-form-input {
+  outline: none;
   border: 1px solid #4d5ae5;
 }
 
@@ -762,6 +774,7 @@ body {
 
 .modal-lable:hover .name-icon,
 .modal-lable:focus .name-icon {
+  outline: none;
   fill: #4d5ae5;
 }
 
@@ -777,6 +790,7 @@ body {
 }
 .modal-coment-box:hover,
 .modal-coment-box:focus {
+  outline: none;
   border: 1px solid #4d5ae5;
 }
 .checkbox {
@@ -785,6 +799,7 @@ body {
   gap: 8px;
 }
 .submit-button {
+  cursor: pointer;
   margin: 0 auto;
   padding: 16px 32px;
   width: 169px;
@@ -800,4 +815,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-button:hover,
+.submit-button:focus {
+  cursor: pointer;
+  color: #ffffff;
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
 }
