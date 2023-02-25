@@ -410,7 +410,7 @@
       <!-- footer -->
       <section class="footer">
         <div class="container footer-container">
-          <div>
+          <div class="footer-text-box">
             <a class="webstudio" href="./index.html"
               ><span class="web">WEB</span
               ><span class="studio-footer">STUDIO</span></a
@@ -421,7 +421,7 @@
               marketing & growth solutions.
             </p>
           </div>
-          <div class="footer-socialmedia">
+          <div class="footer-socialmedia-box">
             <p class="footer-text">Social media</p>
             <ul class="list footer-media-list">
               <li>
@@ -454,6 +454,26 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe">
+            <p class="footer-text">Subscribe</p>
+            <div class="subscribe-box">
+              <form action="#">
+                <input
+                  type="email"
+                  class="subscribe-email"
+                  placeholder="E-mail"
+                  name="user_email"
+                  required
+                />
+              </form>
+              <button type="submit" class="subscribe-button">
+                <span class="subscribe-button-text">Subscribe</span>
+                <svg class="subscribe-icon" width="24" height="20">
+                  <use href="./images/sprite.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </footer>
@@ -465,6 +485,55 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modalwindow-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form action="#" class="modal-form">
+          <lable class="modal-lable"
+            >Name<input type="text" class="modal-form-input" name="user_name" />
+            <svg class="name-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </lable>
+          <lable class="modal-lable"
+            >Phone<input
+              type="tel"
+              class="modal-form-input"
+              name="user_phone"
+            /><svg class="name-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-recall"></use>
+            </svg>
+          </lable>
+          <lable class="modal-lable"
+            >Email<input
+              type="email"
+              class="modal-form-input"
+              name="user_email"
+            /><svg class="name-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-mailsand"></use>
+            </svg>
+          </lable>
+          <lable class="modal-lable"
+            >Comment<textarea
+              name="coment"
+              id="feedback"
+              class="modal-coment-box"
+              placeholder="Text input"
+            ></textarea>
+          </lable>
+          <label class="modal-lable checkbox">
+            <input
+              type="checkbox"
+              name="privacy_policy"
+              value="privacy_policy"
+            />
+            <p>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </p>
+          </label>
+          <button type="submit" class="submit-button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
