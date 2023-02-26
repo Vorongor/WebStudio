@@ -755,6 +755,7 @@ body {
 }
 .modal-form-input {
   color: #000000;
+  background-color: rgba(33, 33, 33, 0.2);
   font-size: 16px;
   line-height: 1.2;
   padding-left: 38px;
@@ -790,6 +791,7 @@ body {
 
 .modal-coment-box {
   color: #000000;
+  background-color: rgba(33, 33, 33, 0.2);
   font-size: 12px;
   line-height: 1.2;
   margin-top: 4px;
@@ -819,15 +821,19 @@ body {
   height: 0;
   visibility: hidden;
 }
+.privacy_policy-text {
+color: #4d5ae5;
+}
 .modal-form-checkbox:checked + .checkbox::before {
   background-color: #404bbf;
   background-image: url(../images/check.jpg);
+  background-position: left top;
 }
 .checkbox::before {
   cursor: pointer;
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
   content: "";
