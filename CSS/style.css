@@ -37,21 +37,25 @@ img {
 /* Mobile 0-767px */
 
 .container {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
 }
 .mobile-menu-button {
-    background-color: #ffffff;
-    display: block;
-    fill: #000000;
-  }
+  position: absolute;
+  z-index: 5;
+  top: 24px;
+  right: 16px;
+  background-color: #ffffff;
+  display: block;
+  fill: #000000;
+}
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
-  
 }
 
 /* table 768-1199px */
@@ -264,6 +268,7 @@ img {
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
   .haed-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
