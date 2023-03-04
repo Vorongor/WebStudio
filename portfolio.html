@@ -27,20 +27,25 @@
           <a class="webstudio" href="./index.html"
             ><span class="web">WEB</span><span class="studio">STUDIO</span></a
           >
+          <button type="button" class="mobile-menu-button" data-menu-open>
+            <svg class="mobile-menu-button-icon" width="32" height="22">
+              <use href="/images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="menu-list">
             <!-- menu -->
             <li class="">
-              <a class="links menu-list-point" href="./index.html"
+              <a href="./index.html" class="links menu-list-point current"
                 ><span class="">Studio</span></a
               >
             </li>
             <li class="portfolio-point">
-              <a class="links menu-list-point current" href="./portfolio.html"
+              <a href="./portfolio.html" class="links menu-list-point"
                 ><span class="">Portfolio</span></a
               >
             </li>
             <li class="">
-              <a class="links menu-list-point" href=""
+              <a href="" class="links menu-list-point"
                 ><span class="">Contacts</span></a
               >
             </li>
@@ -63,6 +68,92 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu " data-menu>
+        <div class="container container-menu">
+          <button
+            type="button"
+            class="mobile-menu-close-button"
+            data-menu-close
+          >
+            <svg class="mobile-menu-close-button-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-list-point">
+              <a
+                href="./index.html"
+                class="links mobile-menu-list-point current"
+                ><span class="">Studio</span></a
+              >
+            </li>
+            <li class="mobile-list-point">
+              <a href="./portfolio.html" class="links mobile-menu-list-point"
+                ><span class="">Portfolio</span></a
+              >
+            </li>
+            <li class="mobile-list-point">
+              <a href="" class="links mobile-menu-list-point"
+                ><span class="">Contacts</span></a
+              >
+            </li>
+          </ul>
+
+          <address class="mobile-address-box">
+            <ul class="mobile-address-box-list list">
+              <li class="mobile-address-box-item">
+                <a
+                  href="tel:+110001111111"
+                  class="links mobile-address-box-point"
+                  ><span class="mobile-address-box-item-phone"
+                    >+11 (000) 111-11-11</span
+                  ></a
+                >
+              </li>
+              <li class="mobile-address-box-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="links mobile-address-box-point"
+                  ><span class="mobile-address-box-item-mail"
+                    >info@devstudio.com</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-media-box list">
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>

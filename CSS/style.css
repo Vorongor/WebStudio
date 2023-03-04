@@ -146,10 +146,11 @@ img {
   background-color: transparent;
   border: none;
   padding: 0;
-  line-height: 0;
+  height: 22px;
 }
 .mobile-menu {
   display: none;
+  background-color: #ffffff;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -157,8 +158,13 @@ img {
   top: 0;
   left: 0;
 }
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .container-menu {
-  width: 100%;
+  width: 428px;
   height: 100%;
   padding: 80px 40px 40px 40px;
   position: relative;
@@ -250,6 +256,9 @@ img {
     border-bottom: 1px solid #e7e9fc;
     align-content: center;
     padding-top: 24px;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
   .haed-container {
     display: flex;
@@ -258,7 +267,7 @@ img {
   .menu {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0;4
   }
 
   .menu-list {
@@ -799,7 +808,7 @@ img {
   background-color: #31d0aa;
 }
 .subscribe {
-  min-width: 453px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
 }
@@ -817,7 +826,7 @@ img {
   font-size: 16px;
   line-height: 1.2;
   padding: 8px 16px;
-  width: 398px;
+  min-width: 320px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -873,10 +882,9 @@ img {
   .subscribe-box {
     flex-wrap: nowrap;
   }
-.subscribe-email {
-  width: 264px;
-}
-
+  .subscribe-email {
+    width: 264px;
+  }
 
   .subscribe-button:hover,
   .subscribe-button:focus {
@@ -887,10 +895,10 @@ img {
   }
 }
 /* =========================portfolio========================== */
-/* .portfolio-box {
+.portfolio-box {
   display: flex;
   flex-direction: column;
-  padding-top: 96px;
+  padding-top: 48px;
   padding-bottom: 120px;
 }
 .portfolio-box1-title {
@@ -899,6 +907,7 @@ img {
 }
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
@@ -949,14 +958,16 @@ img {
 .marketing {
   min-width: 126px;
   min-height: 48px;
-} */
+}
 
 /* =======================galery======================== */
-/* .row-list {
+.row-list {
   margin-top: 72px;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   row-gap: 48px;
   column-gap: 24px;
 }
@@ -1027,9 +1038,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-} */
+}
 /* ============================ modal window================================= */
-/* .backdrop {
+.backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -1120,7 +1131,7 @@ img {
 }
 .modal-form-input {
   color: #000000;
-  background-color: rgba(33, 33, 33, 0.2);
+  background-color: #fcfcfc;
   font-size: 16px;
   line-height: 1.2;
   padding-left: 38px;
@@ -1156,7 +1167,7 @@ img {
 
 .modal-coment-box {
   color: #000000;
-  background-color: rgba(33, 33, 33, 0.2);
+  background-color: #fcfcfc;
   font-size: 12px;
   line-height: 1.2;
   margin-top: 4px;
@@ -1232,4 +1243,4 @@ img {
   color: #ffffff;
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
-} */
+}
