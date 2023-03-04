@@ -47,9 +47,9 @@ img {
     margin-right: auto;
   }
   .mobile-menu-button-icon {
-    background-color: transparent;
+    background-color: #ffffff;
     display: block;
-    fill: #2e2f42;
+    fill: #000000;
   }
 }
 
