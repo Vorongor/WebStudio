@@ -43,7 +43,6 @@ img {
 }
 .mobile-menu-button {
   position: absolute;
-  z-index: 1000;
   top: 24px;
   right: 16px;
   background-color: transparent;
