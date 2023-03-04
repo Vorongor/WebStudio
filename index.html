@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-
     <title>WebStudio</title>
   </head>
   <body>
@@ -27,6 +26,11 @@
           <a class="webstudio" href="./index.html"
             ><span class="web">WEB</span><span class="studio">STUDIO</span></a
           >
+          <button type="button" class="mobile-menu-button" data-menu-open>
+            <svg class="mobile-menu-button-icon" width="32" height="22">
+              <use href="/images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="menu-list">
             <!-- menu -->
             <li class="studio-point">
@@ -63,6 +67,92 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container container-menu">
+          <button
+            type="button"
+            class="mobile-menu-close-button"
+            data-menu-close
+          >
+            <svg class="mobile-menu-close-button-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-list-point">
+              <a
+                href="./index.html"
+                class="links mobile-menu-list-point current"
+                ><span class="">Studio</span></a
+              >
+            </li>
+            <li class="mobile-list-point">
+              <a href="./portfolio.html" class="links mobile-menu-list-point"
+                ><span class="">Portfolio</span></a
+              >
+            </li>
+            <li class="mobile-list-point">
+              <a href="" class="links mobile-menu-list-point"
+                ><span class="">Contacts</span></a
+              >
+            </li>
+          </ul>
+
+          <address class="mobile-address-box">
+            <ul class="mobile-address-box-list list">
+              <li class="mobile-address-box-item">
+                <a
+                  href="tel:+110001111111"
+                  class="links mobile-address-box-point"
+                  ><span class="mobile-address-box-item-phone"
+                    >+11 (000) 111-11-11</span
+                  ></a
+                >
+              </li>
+              <li class="mobile-address-box-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="links mobile-address-box-point"
+                  ><span class="mobile-address-box-item-mail"
+                    >info@devstudio.com</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-media-box list">
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a class="links mobile-media-item" href=""
+                  ><svg class="icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -135,14 +225,15 @@
         </div>
       </section>
       <!-- secti doing -->
-      <section class="section-doing">
+       <section class="section-doing">
         <div class="container">
           <h2 class="section-main-title">What are we doing</h2>
           <ul class="section-doing-list">
             <li class="section-doing-list-item">
               <img
                 class="section-doing-list-frame"
-                src="./images/project/Frame1.jpg"
+                srcset="./images/project/doingdesk@2x.jpg 2x"
+                src="./images/project/doingdesk.jpg"
                 alt="computer program"
                 width="360"
                 height="300"
@@ -151,7 +242,8 @@
             <li class="section-doing-list-item">
               <img
                 class="section-doing-list-frame"
-                src="./images/project/frame2.jpg"
+                srcset="./images/project/doingapp@2x.jpg 2x"
+                src="./images/project/doingapp.jpg"
                 alt="phone program"
                 width="360"
                 height="300"
@@ -160,7 +252,8 @@
             <li class="section-doing-list-item">
               <img
                 class="section-doing-list-frame"
-                src="./images/project/Frame3.jpg"
+                srcset="./images/project/doingsite@2x.jpg 2x"
+                src="./images/project/doingsite.jpg"
                 alt="programm app"
                 width="360"
                 height="300"
@@ -168,16 +261,17 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!-- section team -->
-      <section class="section-team">
+       <section class="section-team">
         <div class="container">
           <h2 class="section-main-title section-team-main-title">Our Team</h2>
           <ul class="section-team-list">
             <li class="section-team-list-item">
               <img
                 class="section-team-list-frame"
-                src="./images/team/imgphoto1.jpg"
+                srcset="./images/team/mark@2x.jpg 2x"
+                src="./images/team/mark.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
                 height="260"
@@ -220,7 +314,8 @@
             <li class="section-team-list-item">
               <img
                 class="section-team-list-frame"
-                src="./images/team/imgphoto2.jpg"
+                srcset="./images/team/tom@2x.jpg 2x"
+                src="./images/team/tom.jpg"
                 alt="Tom Ford Frontend Developer"
                 width="264"
                 height="260"
@@ -263,7 +358,8 @@
             <li class="section-team-list-item">
               <img
                 class="section-team-list-frame"
-                src="./images/team/imgphoto3.jpg"
+                srcset="./images/team/camilia@2x.jpg 2x"
+                src="./images/team/camilia.jpg"
                 alt="Camila Garcia Marketing"
                 width="264"
                 height="260"
@@ -306,7 +402,8 @@
             <li class="section-team-list-item">
               <img
                 class="section-team-list-frame"
-                src="./images/team/imgphoto4.jpg"
+                srcset="./images/team/daniel@2x.jpg 2x"
+                src="./images/team/daniel.jpg"
                 alt="Daniel Wilson UI Designer"
                 width="264"
                 height="260"
@@ -348,10 +445,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!-- section costomers -->
-      <section class="section-costomers">
-        <div class="container">
+       <section class="section-costomers">
+        <div class="container small-container">
           <h2 class="section-main-title section-costomers-title">Customers</h2>
           <ul class="list costomers-list">
             <li class="links costomers-list-item">
@@ -406,12 +503,12 @@
         </div>
       </section>
     </main>
-    <footer>
-      <!-- footer -->
-      <section class="footer">
+    <footer> 
+    <!-- footer -->
+    <section class="footer">
         <div class="container footer-container">
           <div class="footer-text-box">
-            <a class="webstudio" href="./index.html"
+            <a class="webstudio footer-webstudio" href="./index.html"
               ><span class="web">WEB</span
               ><span class="studio-footer">STUDIO</span></a
             >
@@ -475,10 +572,10 @@
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+      </section> 
+     </footer>
     <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modalwindow">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -558,6 +655,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    
+    <script src="./js/modal.js"></script> -->
+    <script scr="./js/menu.js"></script>
   </body>
 </html>
