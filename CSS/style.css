@@ -37,6 +37,8 @@ img {
 /* Mobile 0-767px */
 
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -49,8 +51,8 @@ img {
   display: block;
 }
 .mobile-menu-button-icon {
+  display: block;
   fill: #000000;
-  
 }
 @media screen and (min-width: 428px) {
   .container {
@@ -71,6 +73,8 @@ img {
 
 @media screen and (min-width: 1199px) {
   .container {
+    padding-left: 0;
+    padding-right: 0;
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
@@ -546,17 +550,25 @@ img {
 .section-info-list-item {
   width: 100%;
 }
+.info-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
 @media screen and (min-width: 767px) {
-  .section-info {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
   .section-info-list-item {
     width: 356px;
   }
   .section-info-list {
     flex-direction: row;
     gap: 24px;
+  }
+  .info-title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -572,6 +584,12 @@ img {
   .section-info-list-item {
     width: 264px;
   }
+  .info-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: none;
+  }
 }
 /* ==========================section doing============================== */
 .section-doing {
@@ -583,7 +601,6 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 120px;
     padding-bottom: 120px;
   }
 
@@ -619,7 +636,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   width: 264px;
-  height: 468px;
+  height: 428px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -869,13 +886,22 @@ img {
 
 @media screen and (min-width: 767px) {
   .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 108px;
+  }
+  .table-footer-container {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    gap: 24px;
   }
   .subscribe-box {
     flex-direction: row;
+    justify-content: start;
+    gap: 24px;
+  }
+  .subscribe-button {
+    margin: 0;
   }
   .footer-text {
     text-align: start;
@@ -883,7 +909,12 @@ img {
 }
 @media screen and (min-width: 1199px) {
   .footer-container {
+    padding-left: 0;
+    flex-direction: row;
     flex-wrap: nowrap;
+  }
+  .table-footer-container {
+    gap: 120px;
   }
   .footer-webstudio {
     text-align: start;
