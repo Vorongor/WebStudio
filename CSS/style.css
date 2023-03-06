@@ -47,7 +47,10 @@ img {
   right: 16px;
   background-color: transparent;
   display: block;
+}
+.mobile-menu-button-icon {
   fill: #000000;
+  
 }
 @media screen and (min-width: 428px) {
   .container {
