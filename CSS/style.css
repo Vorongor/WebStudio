@@ -49,6 +49,7 @@ img {
   right: 16px;
   background-color: transparent;
   display: block;
+  fill: #000000;
 }
 .mobile-menu-button-icon {
   display: block;
