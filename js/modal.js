@@ -27,14 +27,37 @@
     modal: document.querySelector("[data-modal]"),
     sendData: document.querySelector("[data-send]"),
     form: document.querySelector(".modal-form"),
+    body: document.querySelector("body"),
+    backdrop: document.querySelector(".backdrop"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
   refs.sendData.addEventListener("click", sendData);
 
+  document.addEventListener("keydown", handleEscKey);
+
+  refs.backdrop.addEventListener("click", (e) => {
+    if (e.target === refs.backdrop) {
+      toggleModal();
+    }
+  });
+
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.toggle("modal-open");
+
+    if (refs.modal.classList.contains("is-hidden")) {
+      document.removeEventListener("keydown", handleEscKey);
+    } else {
+      document.addEventListener("keydown", handleEscKey);
+    }
+  }
+
+  function handleEscKey(e) {
+    if (e.key === "Escape") {
+      toggleModal();
+    }
   }
 
   function sendData(e) {
