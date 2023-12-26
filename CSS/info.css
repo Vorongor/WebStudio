@@ -35,13 +35,7 @@
 }
 
 .overlay-info-text {
-  display: block;
-  text-align: center;
-  width: 300px;
-  padding: 12px;
-  height: auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: none;
 }
 
 .section-info-list {
@@ -85,8 +79,11 @@
   }
   .info-overlay {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1px;
-    height: 496px;
+    height: 100%;
     position: absolute;
     top: 0;
     right: -32px;
@@ -105,12 +102,15 @@
     z-index: 1;
   }
   .overlay-info-text {
+    text-align: center;
+    padding: 12px;
     display: block;
     width: 374px;
-    height: 240px;
+    height: auto;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 1199px) {

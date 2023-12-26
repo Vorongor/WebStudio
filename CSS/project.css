@@ -1,0 +1,106 @@
+.project-box {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background: #f4f4fd;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.project-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+  height: auto;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0), 0px 1px 1px rgba(46, 47, 66, 0),
+    0px 2px 1px rgba(46, 47, 66, 0);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-item-tumb {
+  /* width: 320px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.project-img {
+  width: 280px;
+  height: 220px;
+}
+.tag-list {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.instrument-box {
+  width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.instrument-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+}
+.instrument-item {
+  list-style: none;
+}
+.project-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    width: 90%;
+  }
+  .project-item-tumb {
+    flex-direction: row;
+  }
+  .instrument-box {
+    height: 220px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-img {
+    width: 320px;
+    height: 220px;
+  }
+  .tag-list {
+    width: 320px;
+  }
+  .instrument-box {
+    width: 320px;
+  }
+}

@@ -14,10 +14,11 @@
   flex-wrap: wrap;
   justify-content: center;
   color: #ffffff;
-  gap: 12px;
+  row-gap: 12px;
 }
 
 .section-doing-list-item {
+  width: 140px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -31,4 +32,7 @@
 }
 
 @media screen and (min-width: 1199px) {
+  .section-doing-list {
+    gap: 12px;
+  }
 }

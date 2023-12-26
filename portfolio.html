@@ -15,8 +15,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="icon" type="image/png" href="./images/raven-png.ico" />
 
-    <title>Portfolio</title>
+    <title>VorongorDev</title>
   </head>
   <body class="portfolio-body">
     <header class="head-page">
@@ -25,27 +26,27 @@
         <nav class="menu">
           <!-- logo -->
           <a class="webstudio" href="./index.html"
-            ><span class="web">VORONGOR</span><span class="studio">WEB</span></a
+            ><span class="web">VORONGOR</span><span class="studio">DEV</span></a
           >
           <button type="button" class="mobile-menu-button" data-menu-open>
             <svg class="mobile-menu-button-icon" width="32" height="22">
-              <use href="/images/sprite.svg#icon-burger"></use>
+              <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
           </button>
           <ul class="menu-list">
             <!-- menu -->
             <li class="">
-              <a href="./index.html" class="links menu-list-point current"
-                ><span class="">Studio</span></a
+              <a href="./index.html" class="links menu-list-point"
+                ><span class="">Home</span></a
               >
             </li>
             <li class="portfolio-point">
-              <a href="./portfolio.html" class="links menu-list-point"
+              <a href="./portfolio.html" class="links menu-list-point current"
                 ><span class="">Portfolio</span></a
               >
             </li>
             <li class="">
-              <a href="" class="links menu-list-point"
+              <a href="./contacts.html" class="links menu-list-point"
                 ><span class="">Contacts</span></a
               >
             </li>
@@ -69,7 +70,7 @@
           </ul>
         </address>
         <!-- mobile menu -->
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu is-hidden" data-menu>
           <div class="container container-menu">
             <button
               type="button"
@@ -104,19 +105,19 @@
               <ul class="mobile-address-box-list list">
                 <li class="mobile-address-box-item">
                   <a
-                    href="tel:+110001111111"
+                    href="tel:+380636824667"
                     class="links mobile-address-box-point"
-                    ><span class="mobile-address-box-item-phone"
-                      >+11 (000) 111-11-11</span
+                    ><span class="mobile-address-box-item-mail"
+                      >+38 (063) 68 24 667</span
                     ></a
                   >
                 </li>
                 <li class="mobile-address-box-item">
                   <a
-                    href="mailto:info@devstudio.com"
+                    href="mailto:mr.maddarknes@gmail.com"
                     class="links mobile-address-box-point"
                     ><span class="mobile-address-box-item-mail"
-                      >info@devstudio.com</span
+                      >mr.maddarknes@gmail.com</span
                     ></a
                   >
                 </li>
@@ -158,233 +159,319 @@
     </header>
     <main>
       <section class="portfolio-box">
+        <h2 class="section-main-title section-servises-main-title">Sevices</h2>
         <div class="container">
           <!-- filters -->
           <h1 class="portfolio-box1-title"></h1>
           <ul class="button-list list">
             <li class="button-list-item">
-              <button type="button" class="menu-button all">All</button>
+              <button type="button" class="menu-button">All</button>
             </li>
             <li class="button-list-item">
-              <button type="button" class="menu-button website">
-                Web Site
-              </button>
+              <button type="button" class="menu-button">Web Site</button>
             </li>
             <li class="button-list-item">
-              <button type="button" class="menu-button app">App</button>
+              <button type="button" class="menu-button">Mobile App</button>
             </li>
             <li class="button-list-item">
-              <button type="button" class="menu-button design">Design</button>
+              <button type="button" class="menu-button">Back End</button>
             </li>
             <li class="button-list-item">
-              <button type="button" class="menu-button marketing">
-                Marketing
-              </button>
+              <button type="button" class="menu-button">Adaptive</button>
+            </li>
+            <li class="button-list-item">
+              <button type="button" class="menu-button">Styles</button>
             </li>
           </ul>
-          <!-- finger -->
           <ul class="row-list list">
-            <!-- row1 -->
-            <li class="row-list-item">
+            <li class="row-list-item" data-category="Web Site">
               <div>
                 <div class="overlay-box">
                   <img
-                    srcset="./images/portfolio/portfolio1@2x.jpg 2x"
-                    src="./images/portfolio/portfolio1.jpg"
+                    srcset="./images/portfolio/OnePage.jpg 2x"
+                    src="./images/portfolio/OnePage.jpg"
                     alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
+                    class="servise-img"
                   />
                   <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
+                    A simple site designed to showcase the services or goods
+                    provided by the company, along with contact information and
+                    the option to receive customer feedback.
                   </p>
                 </div>
                 <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Banking App Interface Concept</h3>
-                  <p class="row-list-text">App</p>
+                  <h3 class="row-list-title">One-page advertising website</h3>
+                  <p class="row-list-text">Web Site</p>
                 </div>
               </div>
             </li>
-            <li class="row-list-item">
+            <li class="row-list-item" data-category="Web Site">
               <div>
                 <div class="overlay-box">
                   <img
-                    srcset="./images/portfolio/portfolio2@2x.jpg 2x"
-                    src="./images/portfolio/portfolio2.jpg"
+                    srcset="./images/portfolio/MultyPage.png"
+                    src="./images/portfolio/MultyPage.png"
                     alt="Cashless Paymentt"
-                    width="360"
-                    height="300"
+                    class="servise-img"
                   />
                   <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
+                    A multifunctional platform designed to offer various
+                    categories of services or goods provided by the company. It
+                    spans multiple pages, each dedicated to different aspects,
+                    including detailed service offerings, product descriptions,
+                    contact information, and a section for customer reviews.
                   </p>
                 </div>
                 <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Cashless Paymentt</h3>
-                  <p class="row-list-text">Marketing</p>
+                  <h3 class="row-list-title">Multy pages applicaation</h3>
+                  <p class="row-list-text">Web Site</p>
                 </div>
               </div>
             </li>
-            <li class="row-list-item">
+            <li class="row-list-item" data-category="Back End">
               <div>
                 <div class="overlay-box">
                   <img
-                    srcset="./images/portfolio/portfolio3@2x.jpg 2x"
-                    src="./images/portfolio/portfolio3.jpg"
+                    srcset="./images/portfolio/RestApi.jpg"
+                    src="./images/portfolio/RestApi.jpg"
                     alt="BMeditaion App"
-                    width="360"
-                    height="300"
+                    class="servise-img"
                   />
                   <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
+                    A RESTful API allows for the exchange of data and
+                    functionality, with dedicated endpoints for specific
+                    actions. Its design emphasizes simplicity, scalability, and
+                    statelessness, making it efficient for diverse applications,
+                    from retrieving data to executing complex transactions.
                   </p>
                 </div>
                 <div class="portfolio-text-box">
-                  <h3 class="row-list-title">BMeditaion App</h3>
-                  <p class="row-list-text">App</p>
+                  <h3 class="row-list-title">RESTfull API</h3>
+                  <p class="row-list-text">Back End</p>
                 </div>
               </div>
             </li>
-            <li class="row-list-item">
+            <li class="row-list-item" data-category="Styles">
               <div>
                 <div class="overlay-box">
                   <img
-                    srcset="./images/portfolio/portfolio4@2x.jpg 2x"
-                    src="./images/portfolio/portfolio4.jpg"
+                    srcset="./images/portfolio/Adaptive.jpg 2x"
+                    src="./images/portfolio/Adaptive.jpg"
                     alt="Taxi Service"
-                    width="360"
-                    height="300"
+                    class="servise-img"
                   />
                   <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
+                    An adaptive stylization dynamically adjusts to different
+                    screen sizes, providing users with a seamless and
+                    user-friendly interface regardless of the device they are
+                    using. This adaptability is achieved through flexible
+                    layouts, media queries, and other techniques, enhancing
+                    accessibility and user satisfaction.
                   </p>
                 </div>
                 <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Taxi Service</h3>
-                  <p class="row-list-text">Marketing</p>
+                  <h3 class="row-list-title">Adaptive</h3>
+                  <p class="row-list-text">Rework</p>
                 </div>
               </div>
             </li>
-            <li class="row-list-item">
+            <li class="row-list-item" data-category="Styles">
               <div>
                 <div class="overlay-box">
                   <img
-                    srcset="./images/portfolio/portfolio5@2x.jpg 2x"
-                    src="./images/portfolio/portfolio5.jpg"
+                    srcset="./images/portfolio/Animation.jpg 2x"
+                    src="./images/portfolio/Animation.jpg"
                     alt="Screen Illustrations"
-                    width="360"
-                    height="300"
+                    class="servise-img"
                   />
                   <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
+                    CSS animation, elements allow graceful change of position,
+                    size, color, or other properties, creating a more immersive
+                    and modern user experience. These animations are
+                    lightweight, improve performance, and can be used to convey
+                    information, guide user attention, or simply add a touch of
+                    creativity to the overall design.
                   </p>
                 </div>
                 <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Screen Illustrations</h3>
-                  <p class="row-list-text">Design</p>
+                  <h3 class="row-list-title">CSS Animation</h3>
+                  <p class="row-list-text">Style</p>
                 </div>
               </div>
             </li>
-            <li class="row-list-item">
-              <div>
-                <div class="overlay-box">
-                  <img
-                    srcset="./images/portfolio/portfolio6@2x.jpg 2x"
-                    src="./images/portfolio/portfolio6.jpg"
-                    alt="Online Courses"
-                    width="360"
-                    height="300"
-                  />
-                  <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-                <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Online Courses</h3>
-                  <p class="row-list-text">Marketing</p>
-                </div>
-              </div>
-            </li>
-            <li class="row-list-item">
-              <div>
-                <div class="overlay-box">
-                  <img
-                    srcset="./images/portfolio/portfolio7@2x.jpg 2x"
-                    src="./images/portfolio/portfolio7.jpg"
-                    alt="Instagram Stories Concept"
-                    width="360"
-                    height="300"
-                  />
-                  <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-                <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Instagram Stories Concept</h3>
-                  <p class="row-list-text">Design</p>
-                </div>
-              </div>
-            </li>
-            <li class="row-list-item">
-              <div>
-                <div class="overlay-box">
-                  <img
-                    srcset="./images/portfolio/portfolio8@2x.jpg 2x"
-                    src="./images/portfolio/portfolio8.jpg"
-                    alt="Organic Food"
-                    width="360"
-                    height="300"
-                  />
-                  <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-                <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Organic Food</h3>
-                  <p class="row-list-text">Web Site</p>
-                </div>
-              </div>
-            </li>
-            <li class="row-list-item">
-              <div>
-                <div class="overlay-box">
-                  <img
-                    srcset="./images/portfolio/portfolio9@2x.jpg 2x"
-                    src="./images/portfolio/portfolio9.jpg"
-                    alt="Fresh Coffee"
-                    width="360"
-                    height="300"
-                  />
-                  <p class="overlay">
-                    14 Stylish and User-Friendly App Design Concepts · Task
-                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                    App · Cloud Storage App
-                  </p>
-                </div>
-                <div class="portfolio-text-box">
-                  <h3 class="row-list-title">Fresh Coffee</h3>
-                  <p class="row-list-text">Web Site</p>
-                </div>
-              </div>
+            <li class="row-list-item empty" data-category="Empty">
+              <img
+                src="./images/inProgres.jpg"
+                alt="It seams to be empty here"
+              />
+              <p class="section-title">That service and projects in progres</p>
             </li>
           </ul>
         </div>
+      </section>
+      <section class="project-box">
+        <h2 class="section-main-title section-servises-main-title">Projects</h2>
+        <ul class="project-list">
+          <li class="project-item">
+            <h5 class="section-title">Vnv Solution</h5>
+            <div class="project-item-tumb">
+              <img
+                src="./images/project/vnvSolution.jpg"
+                alt="VnV Solution advertising website"
+                class="project-img"
+              />
+              <ul class="tag-list">
+                <li class="section-text instrument-item">
+                  One-page advertising website
+                </li>
+                <li class="section-text instrument-item">CSS Animation</li>
+                <li class="section-text instrument-item">Adaptive</li>
+              </ul>
+              <div class="instrument-box">
+                <ul class="instrument-list">
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-react"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-css3"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-javascript"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <a
+                  class="menu-button"
+                  href="https://vorongor.github.io/vnvsolution-test/"
+                  target="_blank"
+                  >Site Link</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="project-item">
+            <h5 class="section-title">Book Reader</h5>
+            <div class="project-item-tumb">
+              <img
+                src="./images/project/bookreader.jpg"
+                alt="VnV Solution advertising website"
+                class="project-img"
+              />
+              <ul class="tag-list">
+                <li class="section-text instrument-item">
+                  Multy-pages web application
+                </li>
+                <li class="section-text instrument-item">CSS Animation</li>
+                <li class="section-text instrument-item">Adaptive</li>
+                <li class="section-text instrument-item">REST API</li>
+              </ul>
+              <div class="instrument-box">
+                <ul class="instrument-list">
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-react"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-css3"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-javascript"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-redux"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-swagger"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <a
+                  class="menu-button"
+                  href="https://vorongor.github.io/Boock-reader/"
+                  target="_blank"
+                  >Site Link</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="project-item">
+            <h5 class="section-title">Rental Car</h5>
+            <div class="project-item-tumb">
+              <img
+                src="./images/project/rentalCar.jpg"
+                alt="VnV Solution advertising website"
+                class="project-img"
+              />
+              <ul class="tag-list">
+                <li class="section-text instrument-item">
+                  Multy-pages web application
+                </li>
+                <li class="section-text instrument-item">CSS Animation</li>
+                <li class="section-text instrument-item">Adaptive</li>
+                <li class="section-text instrument-item">Authorization</li>
+                <li class="section-text instrument-item">Full stack</li>
+              </ul>
+              <div class="instrument-box">
+                <ul class="instrument-list">
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-react"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-css3"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-javascript"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-redux"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-node-dot-js"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-mongodb"></use>
+                    </svg>
+                  </li>
+                  <li class="instrument-item">
+                    <svg class="skill-icon" width="36" height="36">
+                      <use href="./images/sprite.svg#icon-git"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <a
+                  class="menu-button"
+                  href="https://vorongor.github.io/VoronRent/"
+                  target="_blank"
+                  >Site Link</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -459,5 +546,6 @@
       </section>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/portfolioFilter.js"></script>
   </body>
 </html>
